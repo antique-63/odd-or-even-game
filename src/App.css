@@ -1,0 +1,138 @@
+/* Ensure full-page layout */
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Game box */
+.game-box {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Input field */
+input {
+  padding: 8px;
+  font-size: 16px;
+  width: 80%;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Buttons */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Score display */
+.score {
+  font-size: 18px;
+  font-weight: bold;
+  color: #28a745;
+  margin-top: 10px;
+}
+
+/* High scorers section */
+.high-scorers {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #e9ecef;
+  border-radius: 10px;
+  width: 400px;
+  text-align: center;
+}
+body {
+  background: url('./img.jpg') no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* 50% opacity overlay */
+  z-index: -1;
+}
+/* Footer styles */
+.footer {
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+/* Smaller and stylish header */
+.game-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  max-width: 600px;
+  margin: 10px auto;
+  padding: 8px 15px;
+  background-color: #444;
+  color: white;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 16px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Header text */
+.game-header h1 {
+  font-size: 18px;
+  margin: 0;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Smaller reset button */
+.reset-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 12px;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.reset-button:hover {
+  background-color: darkred;
+}
